@@ -1,0 +1,17 @@
+# Ignore node modules everywhere
+node_modules/
+
+# Ignore environment variables
+.env
+backend/.env
+frontend/.env
+
+# Logs
+*.log
+
+# Dist / build
+dist/
+build/
+
+# OS files
+.DS_Store
