@@ -4,7 +4,7 @@ import sgMail from "@sendgrid/mail";
 export async function sendIdeaEmail({ name, email, idea }) {
 
   const msg = {
-    to: process.env.EMAIL_FROM, // <-- your own email
+    to: process.env.EMAIL_FROM, 
     from: process.env.EMAIL_FROM,
     subject: `💡 New Idea Submitted by ${name}`,
     html: `
