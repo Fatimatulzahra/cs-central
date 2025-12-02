@@ -1,6 +1,6 @@
 import express from "express";
 import { sendIdeaEmail } from "../utils/sendIdeaEmail.js";
-import Idea from "../models/Idea.js";
+import Idea from "../models/ideaModel.js";
 
 const router = express.Router();
 
