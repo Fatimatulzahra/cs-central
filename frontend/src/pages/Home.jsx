@@ -1,4 +1,3 @@
-import React from 'react';
 import csLink from "../assets/csLink.jpg";
 import { Lightbulb, CalendarDays, Users } from "lucide-react";
 import IdeaModal from '../components/ideaModal';
@@ -11,7 +10,7 @@ export default function Home() {
 
   const submitIdea = async (data) => {
     try {
-      const res = await fetch(`${import.meta.env.VITE_API_URL}/api/ideas/submit`, {
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/api/ideas`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data)
