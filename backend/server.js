@@ -5,7 +5,7 @@ import express from "express";
 import cors from "cors";
 import mongoose from "mongoose";
 import eventRoutes from "./routes/eventRoutes.js";
-import rsvpRoutes from "./routes/events.js";  
+import rsvpRoutes from "./routes/rsvpRoutes.js";  
 import ideaRoutes from "./routes/ideaRoutes.js";
 
 
@@ -20,8 +20,8 @@ app.use(cors({
 app.use(express.json());
 
 // Routes 
-app.use("/api/events", eventRoutes);
 app.use("/api/events", rsvpRoutes);
+app.use("/api/events", eventRoutes);
 app.use("/api/ideas", ideaRoutes);
 
 // MongoDB connection
